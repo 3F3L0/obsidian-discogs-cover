@@ -1,7 +1,7 @@
 {
   "id": "discogs-cover",
   "name": "Discogs Cover",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minAppVersion": "1.0.0",
   "description": "Shows the Discogs cover art for a note's 'discogs' release ID, cached locally and usable in Bases image columns.",
   "author": "Efelo",
