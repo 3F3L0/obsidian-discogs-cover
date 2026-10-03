@@ -4,9 +4,12 @@
   margin-bottom: 1.2em;
 }
 
-.discogs-cover-img {
-  width: auto !important;
-  height: auto !important;
+/* Le sélecteur de classe est répété pour augmenter la spécificité (sans
+   !important) et l'emporter sur les règles des thèmes qui forcent la taille
+   des <img> (ex. Minimal, qui étire les images à 100% du conteneur). */
+.discogs-cover-banner .discogs-cover-img.discogs-cover-img {
+  width: auto;
+  height: auto;
   max-width: var(--discogs-cover-max-size, 300px);
   max-height: var(--discogs-cover-max-size, 300px);
   object-fit: contain;

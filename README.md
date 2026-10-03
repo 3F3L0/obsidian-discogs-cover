@@ -24,6 +24,10 @@ Shows the Discogs cover art for a note whenever its frontmatter has a `discogs` 
 
 To pre-populate the cache for every note that has a `discogs` property (useful before browsing a Base gallery), run **"Cache all Discogs covers"** from the command palette.
 
+## Permissions
+
+The **"Cache all Discogs covers"** command lists every markdown file in the vault (`vault.getMarkdownFiles()`) in order to find the ones with a `discogs` property and pre-fill the local cache for all of them at once. No file content is read beyond its already-indexed frontmatter, and nothing ever leaves the vault except the Discogs release ID sent to `api.discogs.com`.
+
 ## Settings
 
 - **Maximum image size** — max width/height of the cover, in pixels (default 300).
